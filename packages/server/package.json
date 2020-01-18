@@ -31,6 +31,7 @@
     "concurrently": "^5.0.2",
     "cross-env": "^6.0.3",
     "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
     "wait-on": "^3.3.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",

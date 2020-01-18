@@ -1,13 +1,13 @@
-const path = require("path")
-const nodeExternals = require("webpack-node-externals");
+const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  entry: path.resolve(__dirname, "../index.ts"),
+  entry: path.resolve(__dirname, '../index.ts'),
   output: {
-    path: path.resolve(__dirname, "../build"),
-    filename: "index.js"
+    path: path.resolve(__dirname, '../build'),
+    filename: 'index.js',
   },
-  target: "node",
+  target: 'node',
   externals: [nodeExternals()],
   module: {
     rules: [
@@ -17,14 +17,14 @@ module.exports = {
             test: /\.tsx?$/,
             exclude: /node_modules/,
             use: {
-              loader: "babel-loader",
+              loader: 'babel-loader',
               options: {
-                presets: ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"]
-              }
-            }
+                presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
+              },
+            },
           },
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 }
