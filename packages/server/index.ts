@@ -38,15 +38,3 @@ function initialize(): void {
 }
 
 initialize()
-
-// const { PORT = 5000 } = process.env;
-
-// app.use(express.static("./build"));
-
-// app.get("/", (req, res) => {
-//   res.send({ message: "server is working!" });
-// })
-
-// app.listen(PORT, () => {
-//   console.log(`listening on port ${PORT}`)
-// })
