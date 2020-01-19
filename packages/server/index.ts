@@ -1,15 +1,12 @@
-require('dotenv').config({ path: '../../.env' })
-
 import express from 'express'
 import bodyParser from 'body-parser'
-import {
-  setupSession,
-  setupCors,
-  setupSequelize,
-  setupRoutes,
-  setupPassport,
-  checkEnvironmentVariables,
-} from './src/setup'
+import { Sequelize } from 'sequelize'
+import { checkEnvironmentVariables } from './src/setup/setup-environment'
+import { setupSession } from './src/setup/setup-session'
+import { setupCors } from './src/setup/setup-cors'
+import { setupSequelize } from './src/setup/setup-sequelize'
+import { setupRoutes } from './src/setup/setup-routes'
+import { setupPassport } from './src/setup/setup-passport'
 
 function initialize(): void {
   const app = express()
