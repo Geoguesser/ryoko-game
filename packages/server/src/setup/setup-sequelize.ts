@@ -1,5 +1,4 @@
-import express from 'express'
-import { Sequelize, Options, Error } from 'sequelize'
+import { Sequelize, Error } from 'sequelize'
 
 export const sequelize = new Sequelize(process.env.DATABASE_URI || '', {
   dialectOptions: {

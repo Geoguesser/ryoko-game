@@ -1,6 +1,0 @@
-export * from './setup-session'
-export * from './setup-sequelize'
-export * from './setup-cors'
-export * from './setup-routes'
-export * from './setup-passport'
-export * from './setup-environment'

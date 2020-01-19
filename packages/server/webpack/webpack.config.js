@@ -8,7 +8,13 @@ module.exports = {
     filename: 'index.js',
   },
   target: 'node',
+  node: {
+    __dirname: false,
+  },
   externals: [nodeExternals()],
+  resolve: {
+    extensions: ['.ts', '.tsx'],
+  },
   module: {
     rules: [
       {

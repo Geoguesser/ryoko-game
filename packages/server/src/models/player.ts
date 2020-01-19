@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize'
-import { sequelize } from '../setup/index'
+import { sequelize } from '../setup/setup-sequelize'
 
 class Player extends Model {
   public id!: number
